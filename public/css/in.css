@@ -1,0 +1,27 @@
+div{
+  border-left: 2px solid #cae2f8;
+  position: relative;
+  color: #f814149f ;
+  border-radius: ;
+  box-sizing: border-box;
+  box-shadow: ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  visibility: hidden;
+  overflow: hidden;
+  height: calc(100% - 100px);
+  z-index: ;
+  flex-direction: column;
+
+}
+div::nth-child(){
+  position: absolute;
+  position: fixed;
+  transform: translateX(-50%);
+  min-width: ;
+  max-width: ;
+  cursor: pointer;
+}
