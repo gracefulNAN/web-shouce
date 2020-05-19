@@ -5,7 +5,7 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Redirect
+
 } from "react-router-dom";
 import routers from './routers/index.js'
 
@@ -32,7 +32,6 @@ function App() {
               )
             })
           }
-          <Redirect to="/home" />
         </Switch>
       </Router>
     </AppBodey>

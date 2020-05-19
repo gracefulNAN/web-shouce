@@ -1,5 +1,5 @@
 div{
-  border-left: 2px solid #cae2f8;
+  border-left: 2px solid #3a07f5;
   position: relative;
   color: #f814149f ;
   border-radius: ;
@@ -24,4 +24,9 @@ div::nth-child(){
   min-width: ;
   max-width: ;
   cursor: pointer;
+  align-items: ;
+  outline: none;
+}
+div::after{
+  content: ;
 }

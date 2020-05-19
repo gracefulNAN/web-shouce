@@ -14,7 +14,7 @@ export const homeArtActions = createAction(
 
 // state 
 const state = {
-  artLists: {}
+  artLists: {},
 }
 
 // reducer
