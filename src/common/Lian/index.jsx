@@ -21,6 +21,7 @@ const LianCon = styled.div`
     border-radius: 6px;
     padding: 5px;
     box-shadow: 0px 0px 6px 1px #aaa;
+    z-index: 9999;
     &>ul>li{
       padding: 6px 10px;
       font-size: 16px;
@@ -135,9 +136,16 @@ class Lian extends Component{
 
   }
 
+  // 路由跳转
+  routerPushClick = (index)=> {
+    const { history, carHistory } = this.props;
+    if(!carHistory) return ;
+    history.push( carHistory[index] )
+  }
+
   render(){
 
-    const { text, data, actair, history, carHistory } = this.props;
+    const { text, data, actair, } = this.props;
     const { isShowCar } = this.state;
 
     return (
@@ -166,7 +174,7 @@ class Lian extends Component{
                 return (
                   <li
                     key={ item.id } 
-                    onClick={()=>{ history.push( carHistory[index] )}}
+                    onClick={()=>{ this.routerPushClick(index)}}
                   >{item.webCom}</li>
                 )
               })

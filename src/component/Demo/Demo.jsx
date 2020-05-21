@@ -69,11 +69,12 @@ const HeaderCen = styled.div`
 
 const DemoContair = styled.div`
   height: calc( 100% - 60px );
-  // overflow-x: hidden;
-  // overflow-y: scroll;
-  // &::-webkit-scrollbar {
-  //   display: none;
-  // }
+  background-color: rgb(245,245,245);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 class Demo extends Component{
